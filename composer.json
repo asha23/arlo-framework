@@ -1,0 +1,58 @@
+{
+    "name": "base-wordpress",
+    "type": "project",
+    "license": "MIT",
+    "description": "Wordpress base installation",
+    "authors": [{
+        "name": "Ash Whiting",
+        "email": "ash_whiting@hotmail.com"
+    }],
+    "keywords": [
+        "pegasus", "base theme", "wordpress", "stack", "composer", "vagrant", "wp"
+    ],
+    "repositories": {
+        "0": {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        },
+        "theme": {
+            "type": "package",
+            "package": {
+                "name": "asha23/wp-seed",
+                "type": "wordpress-theme",
+                "version": "1",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://github.com/asha23/wp-seed/archive/master.zip"
+                }
+            }
+        }
+    },
+    "require": {
+        "php": ">=5.5",
+        "composer/installers": "~1.0.12",
+        "johnpbloch/wordpress": "*",
+        "wpackagist-plugin/advanced-access-manager": "*",
+        "wpackagist-plugin/tinymce-advanced": "*",
+        "wpackagist-plugin/yoast-seo-acf-analysis": "*",
+        "wpackagist-plugin/post-types-order": "*",
+        "wpackagist-plugin/duplicate-post": "*",
+        "wpackagist-plugin/simple-image-sizes": "*",
+        "wpackagist-plugin/login-lockdown": "*",
+        "wpackagist-plugin/post-terms-order": "*",
+        "wpackagist-plugin/wordpress-seo": "*",
+        "wpackagist-plugin/advanced-custom-fields-table-field": "*",
+        "wpackagist-plugin/tiny-compress-images": "*",
+        "wpackagist-plugin/wp-retina-2x": "*",
+		"wpackagist-plugin/uk-cookie-consent": "*",
+        "asha23/wp-seed": "*"
+    },
+    "extra": {
+        "installer-paths": {
+            "content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "content/themes/{$name}/": ["type:wordpress-theme"]
+        },
+        "wordpress-install-dir": "wp",
+        "content-install-dir": "content"
+    }
+}
