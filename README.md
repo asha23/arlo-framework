@@ -1,4 +1,4 @@
-# wp-Composer-base
+# Wordpress Composer Skeleton
 
 WordPress Composer Framework - This assumes prior knowledge of how to set up WordPress themes.
 
