@@ -5,7 +5,7 @@
 
 This assumes prior knowledge of how to set up WordPress themes. Feel free to make improvements to this - Or drop me a comment if you have any issues.
 
-This framework is not considered to be Production ready at the moment. But should be OK in most circumstances.
+This framework is not considered to be Production ready at the moment. But should be OK in most circumstances. It is essentially a less complex version of Bedrock - And as such, an experimental framework.
 
 It can be considered Version 0.2 Alpha.
 
