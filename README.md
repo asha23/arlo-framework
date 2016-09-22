@@ -53,7 +53,6 @@ web/content
 web/wp
 ```
 
-
 The content folder contains all the themes, plugins and files for the front-end.
 
 The wp folder is the base WordPress installation - You should not change anything in here.
