@@ -52,17 +52,39 @@ web/wp
 ```
 
 
-
 The content folder contains all the themes, plugins and files for the front-end.
 
 The wp folder is the base WordPress installation - You should not change anything in here.
 
 ---
 
+Requirements
+============
+
+You should get a license for Advanced Custom Fields pro for this project.
+
 Getting started
 ===============
 
-Run ```vagrant up``` from the root folder (Not currently tested)
+This uses a version of Scotchbox for Vagrant:  
+Run ```vagrant up``` from the root folder (Not currently tested) - Your website will then be available on
+
+```
+192.168.33.10
+```
+
+#### The following information should be used to connect to the database
+
+
+MySql Host: 127.0.0.1  
+Username: root  
+Password: root
+
+SSH Host: 192.168.33.10  
+SSH User: vagrant  
+SSH Password: vagrant  
+
+## Setup
 
 First off, navigate to the themes folder. ```web/content/themes/wp-seed```. You should rename this to reflect the project name and change the information in styles.css
 
