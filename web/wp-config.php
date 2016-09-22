@@ -2,14 +2,28 @@
 ini_set( 'display_errors', 0 );
 
 // ===================================================
-// Load database info and local development parameters
+// Load database info and environment paramaters
 // ===================================================
-if ( file_exists( dirname( __FILE__ ) . '/../production-config.php' ) ) {
-    define( 'WP_LOCAL_DEV', false );
-    include( dirname( __FILE__ ) . '/../production-config.php' );
-} else {
-    define( 'WP_LOCAL_DEV', true );
-    include( dirname( __FILE__ ) . '/../local-config.php' );
+
+switch($_SERVER['SERVER_NAME']) {
+
+	// Staging server settings
+    case 'staging.yourdomain.dev':
+		define( 'WP_LOCAL_DEV', false );
+		include( dirname( __FILE__ ) . '/../staging-config.php' );
+    break;
+
+	// Local server settings
+    case 'dev.yourdomain.com':
+		define( 'WP_LOCAL_DEV', true );
+		include( dirname( __FILE__ ) . '/../local-config.php' );
+    break;
+
+	// Live server settings
+    case 'yourdomain.com':
+    	define( 'WP_LOCAL_DEV', false );
+		include( dirname( __FILE__ ) . '/../production-config.php' );
+    break;
 }
 
 // ========================
