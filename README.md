@@ -29,6 +29,8 @@ $ composer install
 
 Last updated 22 Sept 2016 by Ash
 
+[You can view the seed theme repo here](https://github.com/asha23/wp-seed)
+
 ---
 
 This is a customised version of WordPress. We have separated out the WordPress core from the content.
