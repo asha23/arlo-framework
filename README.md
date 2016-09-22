@@ -15,7 +15,8 @@ It can be considered Version 0.2 Alpha.
 
 * Download this as a zip file and unzip where you want to build your site
 * Browse to this folder and duplicate ```local-config-sample.php``` - rename it to local-config.php
-* Add your database information
+* Look in ```web/wp-config.php``` and set your environment variables.
+* Look in ```/xxx-config.php```and set your database information
 * Install Composer by running
 
     ```
