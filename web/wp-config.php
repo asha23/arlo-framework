@@ -15,8 +15,8 @@ if ( file_exists( dirname( __FILE__ ) . '/../production-config.php' ) ) {
 // ========================
 // Custom Content Directory
 // ========================
-define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/content' );
-define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/content' );
+define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/web' );
+define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/web/content' );
 define( 'DISALLOW_FILE_EDIT', true );
 
 // ================================================
