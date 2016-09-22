@@ -17,15 +17,9 @@ It can be considered Version 0.2 Alpha.
 * Browse to this folder and duplicate ```local-config-sample.php``` - rename it to local-config.php
 * Look in ```web/wp-config.php``` and set your environment variables.
 * Look in ```/xxx-config.php```and set your database information
-* Install Composer by running
-
-    ```
-$ php -r "copy('https://getComposer.org/installer', 'Composer-setup.php');"
-$ php -r "if (hash_file('SHA384', 'Composer-setup.php') === 'e115a8dc7871f15d853148a7fbac7da27d6c0030b848d9b3dc09e2a0388afed865e6a3d6b3c0fad45c48e2b5fc1196ae') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('Composer-setup.php'); } echo PHP_EOL;"
-$ php Composer-setup.php
-$ php -r "unlink('Composer-setup.php');"
-	```
-
+* Install Composer
+* Install Node
+* Install Bower
 * Once you have Composer installed, then you need to run
 
     ```
