@@ -13,6 +13,7 @@ It can be considered Version 0.2 Alpha.
 
 ## Basic installation instructions
 
+* Create a new repo for your project
 * Download this as a zip file and unzip where you want to build your site
 * Browse to this folder and duplicate ```local-config-sample.php``` - rename it to local-config.php
 * Look in ```web/wp-config.php``` and set your environment variables.
