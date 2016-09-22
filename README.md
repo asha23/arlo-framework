@@ -5,7 +5,7 @@
 
 WordPress Composer Framework - This assumes prior knowledge of how to set up WordPress themes. Feel free to make improvements to this - Or drop me a comment if you have any issues.
 
-It can be considered Version 0.2 Alpha.
+It can be considered Version 0.1 Alpha.
 
 ## Basic installation instructions
 
