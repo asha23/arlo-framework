@@ -62,6 +62,8 @@ The wp folder is the base WordPress installation - You should not change anythin
 Getting started
 ===============
 
+Run ```vagrant up``` from the root folder
+
 First off, navigate to the themes folder. ```web/content/themes/wp-seed```. You should rename this to reflect the project name and change the information in styles.css
 
 You will need node.js and npm installed on your computer before starting: https://nodejs.org/en/
