@@ -7,16 +7,16 @@ ini_set( 'display_errors', 0 );
 
 switch($_SERVER['SERVER_NAME']) {
 
-	// Staging server settings
-    case 'staging.yourdomain.dev':
-		define( 'WP_LOCAL_DEV', false );
-		include( dirname( __FILE__ ) . '/../staging-config.php' );
-    break;
-
 	// Local server settings
     case 'dev.yourdomain.com':
 		define( 'WP_LOCAL_DEV', true );
 		include( dirname( __FILE__ ) . '/../local-config.php' );
+    break;
+
+	// Staging server settings
+    case 'staging.yourdomain.dev':
+		define( 'WP_LOCAL_DEV', false );
+		include( dirname( __FILE__ ) . '/../staging-config.php' );
     break;
 
 	// Live server settings
