@@ -69,12 +69,10 @@ You will also need to install Gulp globally if it's not already installed on you
 Install bower if it's not already installed on your machine
 
     $ npm install -g bower
-
+	
 
 
 ## Notes about the seed theme
-
-Last updated 22 Sept 2016 by Ash
 
 [You can view the seed theme repo here](https://github.com/asha23/wp-seed)
 
