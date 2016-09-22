@@ -13,23 +13,18 @@ It can be considered Version 0.2 Alpha.
 
 ## Basic installation instructions
 
-* Create a new repo for your project
-* Download this as a zip file and unzip where you want to build your site
+* Create a new repository for your project
+* Download this as a zip file and unzip into the repository
 * Browse to this folder and duplicate ```local-config-sample.php``` - rename it to local-config.php
 * Look in ```web/wp-config.php``` and set your environment variables.
 * Look in ```/xxx-config.php```and set your database information
+* Open a terminal and browse to the folder you are using
 * Install Composer
 * Install Node
 * Install Bower
-* Once you have Composer installed, then you need to run
-
-    ```
-$ composer install
-    ```
-
-* This will install all the base plugins and a seed theme into the correct directories.
-* Get started!
-
+* Once you have Composer installed, then you need to run ```$ composer install```. This will install all the base plugins and a seed theme into the correct directories.
+* Send an initial commit to your repository
+* Get started - Or have a beer.
 
 
 Requirements
