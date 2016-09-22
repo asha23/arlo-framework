@@ -2,7 +2,6 @@
 
 ![Badge](https://img.shields.io/github/issues/asha23/wp-composer-base.svg)
 ![Badge](https://img.shields.io/github/forks/asha23/wp-composer-base.svg)
-![Badge](https://img.shields.io/github/stars/asha23/wp-composer-base.svg)
 
 WordPress Composer Framework - This assumes prior knowledge of how to set up WordPress themes. Feel free to make improvements to this - Or drop me a comment if you have any issues.
 
