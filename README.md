@@ -32,37 +32,13 @@ $ composer install
 * This will install all the base plugins and a seed theme into the correct directories.
 * Get started!
 
-## Notes about the seed theme
 
-Last updated 22 Sept 2016 by Ash
-
-[You can view the seed theme repo here](https://github.com/asha23/wp-seed)
-
----
-
-This is a customised version of WordPress. We have separated out the WordPress core from the content.
-
-Below are some instructions to get started. This theme uses node.js building system and Bower for JavaScript dependency management. It is also based around SASS Bootstrap.
-
-You should have been supplied with our front-end development guidelines. Please work to these as much as possible.
-
-The main folder structure is as follows:
-
-```
-web/content
-web/wp
-```
-
-The content folder contains all the themes, plugins and files for the front-end.
-
-The wp folder is the base WordPress installation - You should not change anything in here.
-
----
 
 Requirements
 ============
 
-You should get a license for Advanced Custom Fields pro for this project.
+You should get a license for Advanced Custom Fields pro for this framework.
+Migrate DB Pro is also recommended. Because these are paid plugins we have not included them by default.
 
 Getting started
 ===============
@@ -85,7 +61,9 @@ SSH Host: 192.168.33.10
 SSH User: vagrant  
 SSH Password: vagrant  
 
-## Setup
+Alternatively, just use MAMP.
+
+# Theme Setup
 
 First off, navigate to the themes folder. ```web/content/themes/wp-seed```. You should rename this to reflect the project name and change the information in styles.css
 
@@ -98,6 +76,33 @@ You will also need to install Gulp globally if it's not already installed on you
 Install bower if it's not already installed on your machine
 
     $ npm install -g bower
+
+
+
+## Notes about the seed theme
+
+Last updated 22 Sept 2016 by Ash
+
+[You can view the seed theme repo here](https://github.com/asha23/wp-seed)
+
+
+
+This is a customised version of WordPress. We have separated out the WordPress core from the content.
+
+Below are some instructions to get started. This theme uses node.js building system and Bower for JavaScript dependency management. It is also based around SASS Bootstrap.
+
+You should have been supplied with our front-end development guidelines. Please work to these as much as possible.
+
+The main folder structure is as follows:
+
+```
+web/content
+web/wp
+```
+
+The content folder contains all the themes, plugins and files for the front-end.
+
+The wp folder is the base WordPress installation - You should not change anything in here.
 
 
 Step by step:
@@ -120,9 +125,24 @@ Gulp commands
     $ gulp images
     $ gulp
 
-```gulp watch``` will start the watch task and ```gulp images``` will run an image optimisation on the images folder (useful before deployment) - Run Gulp on it's own to do the tasks once.
+```
+gulp watch
+```
 
----
+will start the watch task and
+
+```
+gulp images
+```
+
+will run an image optimisation on the images folder (useful before deployment) - Run
+
+```
+gulp
+```
+
+on it's own to do the tasks once.
+
 
 wp-seed Folder Structure
 ================
@@ -159,7 +179,7 @@ If you use WordPress Template parts correctly (or standard php includes if you'd
 
 This will automatically be added as soon as you run ```bower install```.
 
----
+
 
 Notes on the Gulpfile.js
 ========================
@@ -170,7 +190,7 @@ We pull the scripts into the ```js/vendor-libs``` folder and then compile them i
 
 Generally speaking, these paths are the only things you should need to touch inside this file, but if you know a better way of doing some of the tasks inside here, then feel free to adjust it to suit your working methods (Please clearly comment any changes though) - This Gulpfile is a work in progress, so if you come across any better ways of doing things in here, then feel free to add them.
 
----
+
 
 Notes on using Bower for dependency management
 ==============================================
@@ -179,20 +199,9 @@ Where possible, you should use Bower for any JavaScript or css modules you want 
 
 If you haven't been to a project in a while it's worth running a bower update periodically.
 
----
+
 
 General notes
 ==============================================
 
 ```/node_modules```, ```/library/bower``` ```wp-config``` and many other files are ignored. You shouldn't include these folders in the deployment as it will cause unnecessary bloat. It is preferable that you pull to staging or live from the repository, rather than uploading files via ftp.
-
----
-
-Project specific notes
-==============================================
-
-Project name:
-
-Project author:
-
-Over to you :) .......
