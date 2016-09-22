@@ -4,10 +4,10 @@ WordPress Composer Framework - This assumes prior knowledge of how to set up Wor
 
 ## Basic installation instructions
 
-1. Download this as a zip file and unzip where you want to build your site
-2. Browse to this folder and duplicate ```local-config-sample.php``` - rename it to local-config.php
-3. Add your database information
-4. Install Composer by running
+* Download this as a zip file and unzip where you want to build your site
+* Browse to this folder and duplicate ```local-config-sample.php``` - rename it to local-config.php
+* Add your database information
+* Install Composer by running
 
     ```
 $ php -r "copy('https://getComposer.org/installer', 'Composer-setup.php');"
@@ -16,12 +16,14 @@ $ php Composer-setup.php
 $ php -r "unlink('Composer-setup.php');"
 	```
 
-5. Once you have Composer installed, then you need to run
+* Once you have Composer installed, then you need to run
 
-```$ composer install```
+    ```
+$ composer install
+    ```
 
-6. This will install all the base plugins and a seed theme into the correct directories.
-7. Get started!
+* This will install all the base plugins and a seed theme into the correct directories.
+* Get started!
 
 ## Notes about the seed theme
 
