@@ -94,9 +94,7 @@ Install bower if it's not already installed on your machine
 
 [You can view the seed theme repo here](https://github.com/asha23/wp-seed)
 
-This is a customised version of WordPress. We have separated out the WordPress core from the content.
-
-Below are some instructions to get started. This theme uses node.js building system and Bower for JavaScript dependency management. It is also based around SASS Bootstrap.
+This theme uses node.js building system and Bower for JavaScript dependency management. It is also based around SASS Bootstrap 3.
 
 You should have been supplied with our front-end development guidelines. Please work to these as much as possible.
 
