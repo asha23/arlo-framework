@@ -5,9 +5,9 @@
 
 This assumes prior knowledge of how to set up WordPress themes. Feel free to make improvements to this - Or drop me a comment if you have any issues.
 
-This framework is not considered to be production ready at the moment. But should be OK in most circumstances. It is essentially a less complex version of Bedrock and has been inspired by those methodologies - And as such, is an experimental framework for demonstration purposes only.
+This framework is not considered to be production ready, but it should be OK in most circumstances. It is essentially a less complex version of Bedrock and has been inspired by those methodologies - And as such, is an experimental framework for demonstration purposes only.
 
-Take a look at Bedrock if you want a more robust/production ready method.
+Take a look at [Bedrock](https://github.com/roots/bedrock) if you want a more robust/production ready method.
 
 It can be considered Version 0.2.1 Alpha.
 
@@ -15,9 +15,6 @@ It can be considered Version 0.2.1 Alpha.
 
 * Create a new repository for your project
 * Download this as a zip file and unzip into the repository
-* Browse to this folder and duplicate ```local-config-sample.php``` - rename it to local-config.php
-* Look in ```web/wp-config.php``` and set your environment variables.
-* Look in ```/xxx-config.php```and set your database information
 * Open a terminal and browse to the folder you are using
 * Install Composer
 * Install Node
@@ -36,7 +33,7 @@ Migrate DB Pro is also recommended. Because these are paid plugins we have not i
 Getting started
 ===============
 
-This uses a version of Scotchbox for Vagrant:  
+There is a Vagrant file in the folder which uses a version of Scotchbox for Vagrant:  
 Run ```vagrant up``` from the root folder (Not currently tested) - Your website will then be available on
 
 ```
@@ -53,7 +50,7 @@ SSH Host: 192.168.33.10
 SSH User: vagrant  
 SSH Password: vagrant  
 
-Alternatively, just use MAMP. Or something like https://www.themejuice.it, which provides an excellent and user-friendly environment for locally developing with WordPress.
+Alternatively, just use MAMP. Or something like https://www.themejuice.it, which provides an excellent and user-friendly environment for locally developing with WordPress. Or any other method you like for deploying locally.
 
 
 ## Config files
@@ -162,7 +159,7 @@ Inside the theme, you will find the following structure. This assumes you know a
 /acf-json
 --------
 
-This is for use with Advanced Custom Fields. You will find some fields already set up here for dealing with global site options. Use as you wish.
+This is for use with Advanced Custom Fields. You will find some fields already set up here for dealing with global site options. Use as you wish. You should make sure that you have Advanced Custom Fields Pro installed.
 
 /build
 -----
@@ -198,7 +195,7 @@ This file contains all the path structures for connecting up your Bower dependen
 
 We pull the scripts into the ```js/vendor-libs``` folder and then compile them into ```scripts.min.js``` in the build folder. You could, if you prefer, directly reference the ```/bower``` folder for the file paths and skip this step.
 
-Generally speaking, these paths are the only things you should need to touch inside this file, but if you know a better way of doing some of the tasks inside here, then feel free to adjust it to suit your working methods (Please clearly comment any changes though) - This Gulpfile is a work in progress, so if you come across any better ways of doing things in here, then feel free to add them.
+Generally speaking, these paths are the only things you should need to touch inside this file, but if you know a better way of doing some of the tasks inside here, then feel free to adjust it to suit your working methods - This Gulpfile is a work in progress, so if you come across any better ways of doing things in here, then feel free to add them and issue a pull request.
 
 
 
@@ -215,3 +212,11 @@ General notes
 ==============================================
 
 ```/node_modules```, ```/library/bower``` ```wp-config``` and many other files are ignored. You shouldn't include these folders in the deployment as it will cause unnecessary bloat. It is preferable that you pull to staging or live from the repository, rather than uploading files via ftp.
+
+
+Changelog
+==============================================
+
+v0.2.1 - Fixed the config folders. Amended the readme.  
+v0.2 - Created the seed theme and tied it all together  
+v0.1 - Migrated from the older base theme framework  
