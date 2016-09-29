@@ -209,7 +209,7 @@ If you haven't been to a project in a while it's worth running a bower update pe
 General notes
 ==============================================
 
-```/node_modules```, ```/library/bower``` ```wp-config``` and many other files are ignored. You shouldn't include these folders in the deployment as it will cause unnecessary bloat. It is preferable that you pull to staging or live from the repository, rather than uploading files via ftp.
+```/node_modules```, ```/bower``` ```wp-config``` and many other files are ignored. You shouldn't include these folders in the deployment as it will cause unnecessary bloat. It is preferable that you pull to staging or live from the repository, rather than uploading files via ftp.
 
 
 Changelog
