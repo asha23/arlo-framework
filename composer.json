@@ -45,7 +45,9 @@
         "wpackagist-plugin/tiny-compress-images": "*",
         "wpackagist-plugin/wp-retina-2x": "*",
 		"wpackagist-plugin/uk-cookie-consent": "*",
+		"timber/timber": "^1.1",
         "asha23/wp-seed": "*"
+
     },
     "extra": {
         "installer-paths": {
