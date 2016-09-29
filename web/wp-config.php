@@ -1,6 +1,10 @@
 <?php
 ini_set( 'display_errors', 0 );
 
+$dev_url = "your.dev.url";
+$staging_url = "your.staging.url";
+$production_url = "your.live.url";
+
 // ===================================================
 // Load database info and environment paramaters
 // ===================================================
@@ -8,19 +12,19 @@ ini_set( 'display_errors', 0 );
 switch($_SERVER['SERVER_NAME']) {
 
 	// Local server settings
-    case 'dev.yourdomain.com':
+    case $dev_url:
 		define( 'WP_LOCAL_DEV', true );
 		include( dirname( __FILE__ ) . '/../local-config.php' );
     break;
 
 	// Staging server settings
-    case 'staging.yourdomain.dev':
+    case $staging_url:
 		define( 'WP_LOCAL_DEV', false );
 		include( dirname( __FILE__ ) . '/../staging-config.php' );
     break;
 
 	// Live server settings
-    case 'yourdomain.com':
+    case $live_url:
     	define( 'WP_LOCAL_DEV', false );
 		include( dirname( __FILE__ ) . '/../production-config.php' );
     break;

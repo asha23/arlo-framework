@@ -9,7 +9,7 @@ This framework is not considered to be production ready at the moment. But shoul
 
 Take a look at Bedrock if you want a more robust/production ready method.
 
-It can be considered Version 0.2 Alpha.
+It can be considered Version 0.2.1 Alpha.
 
 ## Basic installation instructions
 
@@ -45,7 +45,6 @@ Run ```vagrant up``` from the root folder (Not currently tested) - Your website 
 
 #### The following information should be used to connect to the database
 
-
 MySql Host: 127.0.0.1  
 Username: root  
 Password: root
@@ -54,7 +53,29 @@ SSH Host: 192.168.33.10
 SSH User: vagrant  
 SSH Password: vagrant  
 
-Alternatively, just use MAMP.
+Alternatively, just use MAMP. Or something like https://www.themejuice.it, which provides an excellent and user-friendly environment for locally developing with WordPress.
+
+
+## Config files
+
+There are three config files. Rename them to remove -sample and add the database information for each environment. Once you have done this, you can then edit the web/wp-config.php file - in here you will need to change the paths to reflect your environment
+
+```
+$dev_url = "your.dev.url";
+$staging_url = "your.staging.url";
+$production_url = "your.live.url";
+```
+
+## .htaccess
+
+Because we are serving everything out of the ```/web``` folder there is a custom .htacces file which reflects this.
+
+```
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^/web
+RewriteRule ^(.*)$ /web/$1 [NC,L]
+```
+Of course, you could change your ```/sites-available``` information on the server to correctly point the server at the right folder. Whatever suits you best.
 
 # Theme Setup
 
@@ -69,14 +90,12 @@ You will also need to install Gulp globally if it's not already installed on you
 Install bower if it's not already installed on your machine
 
     $ npm install -g bower
-	
+
 
 
 ## Notes about the seed theme
 
 [You can view the seed theme repo here](https://github.com/asha23/wp-seed)
-
-
 
 This is a customised version of WordPress. We have separated out the WordPress core from the content.
 
