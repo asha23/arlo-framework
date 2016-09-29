@@ -8,3 +8,4 @@ local-config.php
 /sassdoc
 themes
 plugins
+composer.lock
