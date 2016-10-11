@@ -96,8 +96,6 @@ Install bower if it's not already installed on your machine
 
 This theme uses Gulp for compilation and Bower for JavaScript dependency management. It is also based around SASS Bootstrap 3.
 
-You should have been supplied with our front-end development guidelines. Please work to these as much as possible.
-
 The main folder structure is as follows:
 
 ```
