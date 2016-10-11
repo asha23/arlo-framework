@@ -65,7 +65,7 @@ $production_url = "your.live.url";
 
 ## .htaccess
 
-Because we are serving everything out of the ```/web``` folder there is a custom .htacces file which reflects this.
+Because we are serving everything out of the ```/web``` folder there is a custom .htaccess file which reflects this.
 
 ```
 RewriteEngine on
