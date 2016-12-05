@@ -214,6 +214,9 @@ General notes
 Changelog
 ==============================================
 
+v0.2.4 - A few fixes to the seed theme
+v0.2.3 - Created a .env environment   
+v0.2.2 - Created a Pegasus Version.   
 v0.2.1 - Fixed the config folders. Amended the readme.  
 v0.2 - Created the seed theme and tied it all together  
 v0.1 - Migrated from the older base theme framework  
