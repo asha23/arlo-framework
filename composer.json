@@ -11,7 +11,7 @@
         "wordpress framework", "base theme", "wordpress", "composer", "vagrant", "wp"
     ],
     "repositories": {
-        "0": {
+        "wp-packagist": {
             "type": "composer",
             "url": "https://wpackagist.org"
         },
@@ -23,16 +23,29 @@
                 "version": "1",
                 "dist": {
                     "type": "zip",
-                    "url": "https://github.com/asha23/wp-seed/archive/v0.2.zip"
+                    "url": "https://github.com/asha23/wp-seed/archive/v0.3.2.zip"
                 }
             }
-        }
+        },
+	"acf": {
+		"type": "package",
+		"package": {
+			"name": "advanced-custom-fields/advanced-custom-fields-pro",
+			"type": "wordpress-plugin",
+			"version": "5.5.0",
+			"dist": {
+				"type": "zip",
+				"url": "https://github.com/asha23/wp-plugs/releases/download/5.5.0/advanced-custom-fields-pro.zip"
+			}
+		}
+	}
     },
     "require": {
         "php": ">=5.5",
         "composer/installers": "~1.0.12",
         "johnpbloch/wordpress": "*",
-        "wpackagist-plugin/advanced-access-manager": "*",
+	"vlucas/phpdotenv": "^2.0.1",
+	"oscarotero/env": "^1.0",
         "wpackagist-plugin/tinymce-advanced": "*",
         "wpackagist-plugin/yoast-seo-acf-analysis": "*",
         "wpackagist-plugin/post-types-order": "*",
@@ -41,13 +54,10 @@
         "wpackagist-plugin/login-lockdown": "*",
         "wpackagist-plugin/post-terms-order": "*",
         "wpackagist-plugin/wordpress-seo": "*",
+	"wpackagist-plugin/wp-migrate-db": "*",
         "wpackagist-plugin/advanced-custom-fields-table-field": "*",
-        "wpackagist-plugin/tiny-compress-images": "*",
-        "wpackagist-plugin/wp-retina-2x": "*",
-		"wpackagist-plugin/uk-cookie-consent": "*",
-		"timber/timber": "^1.1",
+	"advanced-custom-fields/advanced-custom-fields-pro": "*",
         "asha23/wp-seed": "*"
-
     },
     "extra": {
         "installer-paths": {
@@ -58,3 +68,4 @@
         "content-install-dir": "web/content"
     }
 }
+
