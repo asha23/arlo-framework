@@ -6,8 +6,6 @@ local-config.php
 /node-modules
 /bower
 /sassdoc
-web/wp
-web/wp/*
 themes
 plugins
 composer.lock
