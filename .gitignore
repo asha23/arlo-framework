@@ -3,9 +3,9 @@
 production-config.php
 local-config.php
 .vagrant
-/node-modules
-/bower
-/sassdoc
-/themes
-/plugins
+node-modules
+bower
+sassdoc
+themes
+plugins
 composer.lock
