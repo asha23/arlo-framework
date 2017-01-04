@@ -6,6 +6,9 @@ local-config.php
 node-modules
 bower
 sassdoc
-themes
-plugins
 composer.lock
+web/content/upgrade
+web/content/uploads
+.DS_Store
+.sass-cache
+.env
