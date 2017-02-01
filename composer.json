@@ -1,14 +1,14 @@
 {
-    "name": "base-wordpress",
+    "name": "arlo-base-wordpress",
     "type": "project",
     "license": "MIT",
-    "description": "Wordpress base installation",
+    "description": "Wordpress Base Installation",
     "authors": [{
         "name": "Ash Whiting",
         "email": "ash_whiting@hotmail.com"
     }],
     "keywords": [
-        "wordpress framework", "base theme", "wordpress", "composer", "vagrant", "wp"
+        "Arlo", "wordpress framework", "base theme", "wordpress", "composer", "vagrant", "wp"
     ],
     "repositories": {
         "wp-packagist": {
@@ -27,25 +27,25 @@
                 }
             }
         },
-	"acf": {
-		"type": "package",
-		"package": {
-			"name": "advanced-custom-fields/advanced-custom-fields-pro",
-			"type": "wordpress-plugin",
-			"version": "5.5.0",
-			"dist": {
-				"type": "zip",
-				"url": "https://github.com/asha23/wp-plugs/releases/download/5.5.0/advanced-custom-fields-pro.zip"
+		"acf": {
+			"type": "package",
+			"package": {
+				"name": "advanced-custom-fields/advanced-custom-fields-pro",
+				"type": "wordpress-plugin",
+				"version": "5.5.0",
+				"dist": {
+					"type": "zip",
+					"url": "https://github.com/asha23/wp-plugs/releases/download/5.5.0/advanced-custom-fields-pro.zip"
+				}
 			}
 		}
-	}
     },
     "require": {
         "php": ">=5.5",
         "composer/installers": "~1.0.12",
         "johnpbloch/wordpress": "*",
-	"vlucas/phpdotenv": "^2.0.1",
-	"oscarotero/env": "^1.0",
+		"vlucas/phpdotenv": "^2.0.1",
+		"oscarotero/env": "^1.0",
         "wpackagist-plugin/tinymce-advanced": "*",
         "wpackagist-plugin/yoast-seo-acf-analysis": "*",
         "wpackagist-plugin/post-types-order": "*",
@@ -53,9 +53,8 @@
         "wpackagist-plugin/simple-image-sizes": "*",
         "wpackagist-plugin/post-terms-order": "*",
         "wpackagist-plugin/wordpress-seo": "*",
-	"wpackagist-plugin/wp-migrate-db": "*",
         "wpackagist-plugin/advanced-custom-fields-table-field": "*",
-	"advanced-custom-fields/advanced-custom-fields-pro": "*",
+		"advanced-custom-fields/advanced-custom-fields-pro": "*",
         "asha23/wp-seed": "*"
     },
     "extra": {
@@ -67,4 +66,3 @@
         "content-install-dir": "web/content"
     }
 }
-

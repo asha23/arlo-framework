@@ -1,10 +1,8 @@
-/web/wp
-/vendor
+/web/wp/wp-content
 .vagrant
 node-modules
 bower
 sassdoc
-composer.lock
 web/content/upgrade
 web/content/uploads
 .DS_Store

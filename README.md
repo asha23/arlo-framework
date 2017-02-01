@@ -1,31 +1,30 @@
-# Arlo
+# Pegasus Wordpress Base Theme (Composer version)
 ### A Wordpress/Composer framework.
 
-![Badge](https://img.shields.io/github/issues/asha23/wp-composer-base.svg)
-![Badge](https://img.shields.io/github/forks/asha23/wp-composer-base.svg)
+This assumes prior knowledge of how to set up WordPress themes. Feel free to make improvements to this.
 
-This assumes prior knowledge of how to set up WordPress themes. Feel free to make improvements to this - Or drop me a comment if you have any issues.
-
-I have based this around Bedrock in the main, with a few subtle differences and simplifications.
+It's very loosely based on Bedrock, but with a much more simplified method for differentiating between dev/staging/production databases.
 
 ## Basic installation instructions
 
 * Create a new repository for your project
-* Download this as a zip file and unzip into the repository
+* Download this as a zip file and unzip into the repository - https://bitbucket.org/this-is-pegasus-team/pegasus-wordpress-composer/get/master.zip
 * Open a terminal and browse to the folder you are using
-* Install Composer
-* Install Node
-* Install Bower
+* Install Composer - https://getcomposer.org/
+* Install Node - https://nodejs.org/en/
+* Install Bower - https://bower.io/
+* Install Yarn - https://yarnpkg.com/
 * Once you have Composer installed, then you need to run ```$ composer install```. This will install all the base plugins and a seed theme into the correct directories.
 * Send an initial commit to your repository
-* Get started - Or have a beer.
+* Get started.
+
+You can alternatively create a fork of this framework. If you want the composer file to stay up to date.
 
 
 Requirements
 ============
 
 You should get a license for Advanced Custom Fields pro for this framework.
-Migrate DB Pro is also recommended. Because these are paid plugins we have not included them by default.
 
 Getting started
 ===============
@@ -49,41 +48,31 @@ SSH Password: vagrant
 
 Alternatively, just use MAMP. Or something like https://www.themejuice.it, which provides an excellent and user-friendly environment for locally developing with WordPress. Or any other method you like for deploying locally.
 
+Vagrant is the recommended method as it keeps everything self contained.
 
-## Config files
 
-There are three config files. Rename them to remove -sample and add the database information for each environment. Once you have done this, you can then edit the web/wp-config.php file - in here you will need to change the paths to reflect your environment
+## .env-example file
 
-```
-$dev_url = "your.dev.url";
-$staging_url = "your.staging.url";
-$production_url = "your.live.url";
-```
+There is a .env-example file in the root. You should fill out the relevant information in this file and then re-save it as .env. Once you have done this, you can then edit the web/wp-config.php file and add salts, or do other configurations.
 
-## .htaccess
-
-Because we are serving everything out of the ```/web``` folder there is a custom .htaccess file which reflects this.
-
-```
-RewriteEngine on
-RewriteCond %{REQUEST_URI} !^/web
-RewriteRule ^(.*)$ /web/$1 [NC,L]
-```
-Of course, you could change your ```/sites-available``` information on the server to correctly point the server at the right folder. Whatever suits you best.
+There is information for 3 environments contained here, development, production and staging. Filling out this information correctly will make sites easier to deploy as it will auto-detect which database to use depending on your environment.
 
 # Theme Setup
 
 First off, navigate to the themes folder. ```web/content/themes/wp-seed```. You should rename this to reflect the project name and change the information in styles.css
 
-You will need node.js and npm installed on your computer before starting: https://nodejs.org/en/
+You will need node.js, npm and Yarn installed on your computer before starting:
 
-You will also need to install Gulp globally if it's not already installed on your machine.
+https://nodejs.org/en/   
+https://yarnpkg.com/
 
-    $ npm install gulp -g
+You should install Gulp globally if it's not already installed on your machine.
+
+    $ yarn add gulp -g
 
 Install bower if it's not already installed on your machine
 
-    $ npm install -g bower
+    $ yarn add -g bower
 
 
 
@@ -108,14 +97,14 @@ The wp folder is the base WordPress installation - You should not change anythin
 Step by step:
 ------------------------------------------------
 
-This base theme uses Gulp by default.
+The seed theme uses Gulp and Yarn for dependency management. Yarn is a dependency manager created by Facebook and it seems to be way faster than using npm. It will pick up all your npm dependencies and use them, so it's very similar
 
 In your terminal, cd into your theme directory and execute
 
     $ bower install
-    $ npm install
+    $ yarn
 
-This will get everything set up, ready for you to start developing with this theme.
+This will get everything set up, ready for you to start developing with the theme.
 
 
 Gulp commands
@@ -188,7 +177,7 @@ This file contains all the path structures for connecting up your Bower dependen
 
 We pull the scripts into the ```js/vendor-libs``` folder and then compile them into ```scripts.min.js``` in the build folder. You could, if you prefer, directly reference the ```/bower``` folder for the file paths and skip this step.
 
-Generally speaking, these paths are the only things you should need to touch inside this file, but if you know a better way of doing some of the tasks inside here, then feel free to adjust it to suit your working methods - This Gulpfile is a work in progress, so if you come across any better ways of doing things in here, then feel free to add them and issue a pull request.
+Generally speaking, these paths are the only things you should need to touch inside this file, but if you know a better way of doing some of the tasks inside here, then feel free to adjust it to suit your working methods - This Gulpfile is a work in progress.
 
 
 
@@ -197,7 +186,7 @@ Notes on using Bower for dependency management
 
 Where possible, you should use Bower for any JavaScript or css modules you want to add to this theme. A lot of commonly used libraries and frameworks are now part of the Bower ecosystem. This will make sure that all your dependencies remain intact and that you are always using the most up-to-date version of the library.
 
-If you haven't been to a project in a while it's worth running a bower update periodically.
+If you haven't been to a project in a while it's worth running a ```bower update``` periodically.
 
 
 
@@ -210,10 +199,8 @@ General notes
 Changelog
 ==============================================
 
-vv0.2.3-alpha - Released
-v0.2.3 - A few fixes to the seed theme
-v0.2.3 - Created a .env environment   
-v0.2.2 - Created a Pegasus Version.   
+v0.2.3 - Created a .env environment
+v0.2.2 - Created a Pegasus Version.
 v0.2.1 - Fixed the config folders. Amended the readme.  
 v0.2 - Created the seed theme and tied it all together  
-v0.1 - Migrated from the older base theme framework  
+v0.1 - Migrated from the older base theme framework
