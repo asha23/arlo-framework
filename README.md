@@ -1,4 +1,4 @@
-# Pegasus Wordpress Base Theme (Composer version)
+# Arlo Wordpress Base Theme (Composer version)
 ### A Wordpress/Composer framework.
 
 This assumes prior knowledge of how to set up WordPress themes. Feel free to make improvements to this.
