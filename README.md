@@ -1,4 +1,4 @@
-# Arlo Wordpress Base Theme (Composer version)
+# Arlo
 ### A Wordpress/Composer framework.
 
 This assumes prior knowledge of how to set up WordPress themes. Feel free to make improvements to this.
@@ -195,12 +195,4 @@ General notes
 
 ```/node_modules```, ```/bower``` ```wp-config``` and many other files are ignored. You shouldn't include these folders in the deployment as it will cause unnecessary bloat. It is preferable that you pull to staging or live from the repository, rather than uploading files via ftp.
 
-
-Changelog
-==============================================
-
-v0.2.3 - Created a .env environment
-v0.2.2 - Created a Pegasus Version.
-v0.2.1 - Fixed the config folders. Amended the readme.  
-v0.2 - Created the seed theme and tied it all together  
-v0.1 - Migrated from the older base theme framework
+Arlo is the name of my 9 month old son. :)
