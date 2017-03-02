@@ -5,6 +5,8 @@ bower
 sassdoc
 web/content/upgrade
 web/content/uploads
+web/content/plugins
+web/wp
 .DS_Store
 .sass-cache
 .env
