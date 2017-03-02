@@ -1,14 +1,14 @@
 {
-    "name": "pegasus-base-wordpress",
+    "name": "arlo-base-wordpress",
     "type": "project",
     "license": "MIT",
-    "description": "Pegasus Wordpress base installation",
+    "description": "Arlo Wordpress base installation",
     "authors": [{
         "name": "Ash Whiting",
         "email": "ash_whiting@hotmail.com"
     }],
     "keywords": [
-        "Pegasus", "wordpress framework", "base theme", "wordpress", "composer", "vagrant", "wp"
+        "Arlo", "wordpress framework", "base theme", "wordpress", "composer", "vagrant", "wp"
     ],
     "repositories": {
         "wp-packagist": {
