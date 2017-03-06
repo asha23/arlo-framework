@@ -81,11 +81,5 @@
         },
         "wordpress-install-dir": "web/wp",
         "content-install-dir": "web/content"
-    },
-    "scripts": {
-        "post-install-cmd": [
-            "cd web/wp",
-            "rm -r wp-content"
-        ]
     }
 }
