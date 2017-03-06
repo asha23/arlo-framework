@@ -12,32 +12,32 @@ $dotenv = new Dotenv\Dotenv($root_dir);
 if (file_exists($root_dir . '/.env')) {
     $dotenv->load();
     $dotenv->required([
-						'DEV_DB_NAME',
-						'DEV_DB_USER',
-						'DEV_DB_PASSWORD',
-						'DEV_DB_HOST',
-						'STAGING_DB_NAME',
-						'STAGING_DB_USER',
-						'STAGING_DB_PASSWORD',
-						'STAGING_DB_HOST',
-						'PRODUCTION_DB_NAME',
-						'PRODUCTION_DB_USER',
-						'PRODUCTION_DB_PASSWORD',
-						'PRODUCTION_DB_HOST',
-						'WP_DEV',
-						'WP_STAGING',
-						'WP_PRODUCTION'
-					]);
+			'DEV_DB_NAME',
+			'DEV_DB_USER',
+			'DEV_DB_PASSWORD',
+			'DEV_DB_HOST',
+			'STAGING_DB_NAME',
+			'STAGING_DB_USER',
+			'STAGING_DB_PASSWORD',
+			'STAGING_DB_HOST',
+			'PRODUCTION_DB_NAME',
+			'PRODUCTION_DB_USER',
+			'PRODUCTION_DB_PASSWORD',
+			'PRODUCTION_DB_HOST',
+			'WP_DEV',
+			'WP_STAGING',
+			'WP_PRODUCTION',
+			'WP_PRODUCTION_FULL'
+		]);
 
 } else {
 	print_r('initialisation failed');
 }
 
-ini_set( 'display_errors', 0 );
-
 $dev_url = env('WP_DEV');
 $staging_url = env('WP_STAGING');
 $production_url = env('WP_PRODUCTION');
+$production_url_full = env('WP_PRODUCTION_FULL');
 
 // ===================================================
 // Load database info and environment paramaters
@@ -47,7 +47,6 @@ switch($_SERVER['SERVER_NAME']) {
 
 	// Local server settings
     case $dev_url:
-
 		define( 'WP_LOCAL_DEV', true );
 		define( 'DB_NAME', env('DEV_DB_NAME') );
 		define( 'DB_USER', env('DEV_DB_USER') );
@@ -65,7 +64,16 @@ switch($_SERVER['SERVER_NAME']) {
     break;
 
 	// Live server settings
-    case $live_url:
+    case $production_url:
+		define( 'WP_LOCAL_DEV', false );
+		define( 'DB_NAME', env('PRODUCTION_DB_NAME') );
+		define( 'DB_USER', env('PRODUCTION_DB_USER') );
+		define( 'DB_PASSWORD', env('PRODUCTION_DB_PASSWORD') );
+		define( 'DB_HOST', env('PRODUCTION_DB_HOST') );
+    break;
+
+	// Live server settings
+    case $production_url_full:
 		define( 'WP_LOCAL_DEV', false );
 		define( 'DB_NAME', env('PRODUCTION_DB_NAME') );
 		define( 'DB_USER', env('PRODUCTION_DB_USER') );
@@ -86,7 +94,10 @@ if (!defined('WP_HOME')) {
 		case: $staging_url:
     		define('WP_HOME', 'http://' . $staging_url);
 		break;
-		case: $staging_url:
+		case: $production_url:
+    		define('WP_HOME', 'http://' . $production_url);
+		break;
+		case: $production_url_full:
     		define('WP_HOME', 'http://' . $production_url);
 		break;
 	}
@@ -120,6 +131,7 @@ define( 'WPLANG', 'en_GB' );
 // Change these to different unique phrases!
 // You can generate these using the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
 // You can change these at any point in time to invalidate all existing cookies. This will force all users to have to log in again.
+// REPLACE THESE
 
 // ================================
 
@@ -135,8 +147,9 @@ define('NONCE_SALT',       'uBW!%ut#F]]5Etl3MwAi|;9 82#qY9(x:])4BU*y{4BrSHk^hT&E
 // ======================
 // Hide errors by default
 // ======================
-define( 'WP_DEBUG_DISPLAY', 1 );
-define( 'WP_DEBUG', 1 );
+ini_set( 'display_errors', 0 );
+define( 'WP_DEBUG_DISPLAY', 0 );
+define( 'WP_DEBUG', 0 );
 
 // =========================
 // Disable automatic updates
