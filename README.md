@@ -5,7 +5,7 @@ This assumes prior knowledge of how to set up WordPress themes. Feel free to mak
 
 It's very (very) loosely based on Bedrock, but with a much more simplified method for differentiating between dev/staging/production databases. I found that for most of my working practice I simply didn't need a lot of what Bedrock offered and decided to use it's methodologies as a starting point, but keep it a hell of a lot simpler.
 
-If you like Bedrock, then great. Fill your boots. But if you find it a little overcomplicated like I do, then this framework/approach might be more up your alley.
+If you like Bedrock, then great! It's pretty awesome, so fill your boots. But if you find it a little overcomplicated and a tiny bit bloated like I do, then this framework/approach might be more up your alley.
 
 You can get up and running with a complete WordPress environment in about a minute.
 
