@@ -77,9 +77,21 @@ switch($_SERVER['SERVER_NAME']) {
 // ========================
 // Custom Content Directory
 // ========================
+
 if (!defined('WP_HOME')) {
-    define('WP_HOME',    'http://idel.local');
+	switch($_SERVER['SERVER_NAME']) {
+		case: $dev_url:
+    		define('WP_HOME', 'http://' . $dev_url);
+		break;
+		case: $staging_url:
+    		define('WP_HOME', 'http://' . $staging_url);
+		break;
+		case: $staging_url:
+    		define('WP_HOME', 'http://' . $production_url);
+		break;
+	}
 }
+
 if (!defined('WP_SITEURL')) {
     define('WP_SITEURL', WP_HOME .'/wp');
 }

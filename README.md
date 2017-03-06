@@ -57,24 +57,6 @@ There is a .env-example file in the root. You should fill out the relevant infor
 
 There is information for 3 environments contained here, development, production and staging. Filling out this information correctly will make sites easier to deploy as it will auto-detect which database to use depending on your environment.
 
-# Theme Setup
-
-First off, navigate to the themes folder. ```web/content/themes/wp-seed```. You should rename this to reflect the project name and change the information in styles.css
-
-You will need node.js, npm and Yarn installed on your computer before starting:
-
-https://nodejs.org/en/   
-https://yarnpkg.com/
-
-You should install Gulp globally if it's not already installed on your machine.
-
-    $ yarn add gulp -g
-
-Install bower if it's not already installed on your machine
-
-    $ yarn add -g bower
-
-
 
 ## Notes about the seed theme
 
@@ -92,6 +74,23 @@ web/wp
 The content folder contains all the themes, plugins and files for the front-end.
 
 The wp folder is the base WordPress installation - You should not change anything in here.
+
+# Theme Setup
+
+First off, navigate to the themes folder. ```web/content/themes/wp-seed```. You should rename this to reflect the project name and change the information in styles.css
+
+You will need node.js, npm and Yarn installed on your computer before starting:
+
+https://nodejs.org/en/   
+https://yarnpkg.com/
+
+You should install Gulp globally if it's not already installed on your machine.
+
+    $ yarn add gulp -g
+
+Install bower if it's not already installed on your machine
+
+    $ yarn add -g bower
 
 
 Step by step:
@@ -195,4 +194,4 @@ General notes
 
 ```/node_modules```, ```/bower``` ```wp-config``` and many other files are ignored. You shouldn't include these folders in the deployment as it will cause unnecessary bloat. It is preferable that you pull to staging or live from the repository, rather than uploading files via ftp.
 
-Arlo is the name of my 9 month old son. :)
+Arlo is the name of my 10 month old son.
