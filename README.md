@@ -58,6 +58,14 @@ There is a .env-example file in the root. You should fill out the relevant infor
 
 There is information for 3 environments contained here, development, production and staging. Filling out this information correctly will make sites easier to deploy as it will auto-detect which database to use depending on your environment.
 
+## Notes on the .gitignore.
+
+This installation by default ignores everything but your theme. You will need to create a deployment of wordpress on your production environment and run composer install. 
+
+If you can't do this simply upload the files as required. I decided to not include all the WordPress stuff in the repo because in the most part it's an uneccesary step really.
+
+Feel free to edit the .gitignore file though if you want to change this.
+
 
 ## Notes about the seed theme
 
