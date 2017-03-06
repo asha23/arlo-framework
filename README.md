@@ -14,6 +14,7 @@ It's very loosely based on Bedrock, but with a much more simplified method for d
 * Install Node - https://nodejs.org/en/
 * Install Bower - https://bower.io/
 * Install Yarn - https://yarnpkg.com/
+* Rename .env-example to .env and fill out the relevant fields.
 * Once you have Composer installed, then you need to run ```$ composer install```. This will install all the base plugins and a seed theme into the correct directories.
 * Send an initial commit to your repository
 * Get started.
