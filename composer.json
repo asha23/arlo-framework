@@ -69,6 +69,7 @@
         "wpackagist-plugin/simple-image-sizes": "*",
         "wpackagist-plugin/post-terms-order": "*",
         "wpackagist-plugin/wordpress-seo": "*",
+		"wpackagist-plugin/acf-theme-code": "*",
         "wpackagist-plugin/advanced-custom-fields-table-field": "*",
 		"advanced-custom-fields/advanced-custom-fields-pro": "*",
 		"wp-sync-db/wp-sync-db": "*",
