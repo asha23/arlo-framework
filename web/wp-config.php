@@ -45,7 +45,6 @@ $production_url_full = env('WP_PRODUCTION_FULL');
 
 switch($_SERVER['SERVER_NAME']) {
 
-	// Local server settings
     case $dev_url:
 		define( 'WP_LOCAL_DEV', true );
 		define( 'DB_NAME', env('DEV_DB_NAME') );
@@ -86,22 +85,24 @@ switch($_SERVER['SERVER_NAME']) {
 // Custom Content Directory
 // ========================
 
-if (!defined('WP_HOME')) {
-	switch($_SERVER['SERVER_NAME']) {
-		case: $dev_url:
-    		define('WP_HOME', 'http://' . $dev_url);
-		break;
-		case: $staging_url:
-    		define('WP_HOME', 'http://' . $staging_url);
-		break;
-		case: $production_url:
-    		define('WP_HOME', 'http://' . $production_url);
-		break;
-		case: $production_url_full:
-    		define('WP_HOME', 'http://' . $production_url);
-		break;
-	}
-}
+if($_SERVER['SERVER_NAME'] == $dev_url):
+	if (!defined('WP_HOME')):
+		define('WP_HOME', 'http://' . $dev_url);
+	endif;
+elseif($_SERVER['SERVER_NAME'] == $staging_url) :
+	if (!defined('WP_HOME')):
+		define('WP_HOME', 'http://' . $staging_url);
+	endif;
+elseif($_SERVER['SERVER_NAME'] == $production_url) :
+	if (!defined('WP_HOME')):
+		define('WP_HOME', 'http://' . $production_url);
+	endif;
+elseif($_SERVER['SERVER_NAME'] == $production_url_full) :
+	if (!defined('WP_HOME')):
+		define('WP_HOME', 'http://' . $production_url_full);
+	endif;
+endif;
+
 
 if (!defined('WP_SITEURL')) {
     define('WP_SITEURL', WP_HOME .'/wp');
