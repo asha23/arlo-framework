@@ -1,6 +1,8 @@
 # Arlo
 ### A Wordpress/Composer framework.
 
+[![GitHub issues](https://img.shields.io/github/issues/asha23/arlo-framework.svg)](https://github.com/asha23/arlo-framework/issues) [![GitHub forks](https://img.shields.io/github/forks/asha23/arlo-framework.svg)](https://github.com/asha23/arlo-framework/network) [![GitHub stars](https://img.shields.io/github/stars/asha23/arlo-framework.svg)](https://github.com/asha23/arlo-framework/stargazers) [![Twitter](https://img.shields.io/twitter/url/https/github.com/asha23/arlo-framework.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
+
 This assumes prior knowledge of how to set up WordPress themes. Feel free to make improvements to this.
 
 It's very (very) loosely based on Bedrock, but with a much more simplified method for differentiating between dev/staging/production databases. I found that for most of my working practice I simply didn't need a lot of what Bedrock offered and decided to use it's methodologies as a starting point, but keep it a hell of a lot simpler.
