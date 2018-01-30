@@ -209,4 +209,3 @@ General notes
 
 ```/node_modules```, ```/bower``` ```wp-config``` and many other files are ignored. You shouldn't include these folders in the deployment as it will cause unnecessary bloat. It is preferable that you pull to staging or live from the repository, rather than uploading files via ftp.
 
-Arlo is the name of my 10 month old son.
