@@ -20,7 +20,7 @@
             "package": {
                 "name": "asha23/wp-seed",
                 "type": "wordpress-theme",
-                "version": "0.4.2",
+                "version": "0.4.3",
                 "dist": {
                     "type": "zip",
                     "url": "https://github.com/asha23/wp-seed/archive/v0.4.2.zip"
