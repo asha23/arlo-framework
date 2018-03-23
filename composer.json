@@ -67,7 +67,6 @@
         "wpackagist-plugin/duplicate-post": "*",
         "wpackagist-plugin/simple-image-sizes": "*",
         "wpackagist-plugin/wordpress-seo": "*",
-	"wpackagist-plugin/amp": "*",
 	"advanced-custom-fields/advanced-custom-fields-pro": "*",
 	"wp-sync-db/wp-sync-db": "*",
         "asha23/wp-seed": "*"
