@@ -25,7 +25,7 @@ You can get up and running with a complete WordPress environment in about a minu
 * Send an initial commit to your repository
 * Get started.
 
-You can alternatively create a fork of this framework. If you want the composer file to stay up to date.
+    composer create-project asha23/arlo-base-wordpress your-folder-name
 
 
 Requirements
