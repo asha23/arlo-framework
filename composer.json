@@ -2,7 +2,7 @@
     "name": "asha23/arlo-base-wordpress",
     "type": "project",
     "license": "MIT",
-    "description": "Wordpress base installation - Gets you up and running in minutes",
+    "description": "A Composer Framework to help you get WordPress and running in around a minute",
     "authors": [{
         "name": "Ash Whiting",
         "email": "ash_whiting@hotmail.com"
