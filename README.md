@@ -25,8 +25,9 @@ You can get up and running with a complete WordPress environment in about a minu
 * Send an initial commit to your repository
 * Get started.
 
-    composer create-project asha23/arlo-base-wordpress your-folder-name
-
+```
+composer create-project asha23/arlo-base-wordpress your-folder-name
+```
 
 Requirements
 ============
