@@ -26,22 +26,6 @@
                     "url": "https://github.com/asha23/wp-seed/archive/v0.4.6.zip"
                 }
             }
-        },
-		"acf": {
-			"type": "package",
-			"package": {
-				"name": "advanced-custom-fields/advanced-custom-fields-pro",
-				"version": "5.6.9",
-				"type": "wordpress-plugin",
-				"dist": {
-					"type": "zip",
-					"url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download"
-				},
-				"require": {
-					"philippbaschke/acf-pro-installer": "^1.0",
-					"composer/installers": "^1.0"
-				}
-			}
 		},
 		"wp-sync-db": {
 			"type": "package",
@@ -60,17 +44,16 @@
         "php": ">=5.5",
         "composer/installers": "~1.0.12",
         "johnpbloch/wordpress": "*",
-	"vlucas/phpdotenv": "^2.0.1",
-	"oscarotero/env": "^1.0",
+	    "vlucas/phpdotenv": "^2.0.1",
+	    "oscarotero/env": "^1.0",
         "wpackagist-plugin/tinymce-advanced": "*",
         "wpackagist-plugin/acf-content-analysis-for-yoast-seo": "*",
         "wpackagist-plugin/duplicate-post": "*",
         "wpackagist-plugin/simple-image-sizes": "*",
         "wpackagist-plugin/wordpress-seo": "*",
-	"wpackagist-plugin/wordfence": "*",
+	    "wpackagist-plugin/wordfence": "*",
         "wpackagist-plugin/wps-hide-login": "*",
-	"advanced-custom-fields/advanced-custom-fields-pro": "*",
-	"wp-sync-db/wp-sync-db": "*",
+	    "wp-sync-db/wp-sync-db": "*",
         "asha23/wp-seed": "*"
     },
     "extra": {
