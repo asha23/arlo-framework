@@ -1,6 +1,10 @@
 # Arlo
 ### A Wordpress/Composer framework.
 
+```
+composer create-project asha23/arlo-base-wordpress your-folder-name
+```
+
 [![GitHub issues](https://img.shields.io/github/issues/asha23/arlo-framework.svg)](https://github.com/asha23/arlo-framework/issues) [![GitHub forks](https://img.shields.io/github/forks/asha23/arlo-framework.svg)](https://github.com/asha23/arlo-framework/network) [![GitHub stars](https://img.shields.io/github/stars/asha23/arlo-framework.svg)](https://github.com/asha23/arlo-framework/stargazers) [![Twitter](https://img.shields.io/twitter/url/https/github.com/asha23/arlo-framework.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
 
 This assumes prior knowledge of how to set up WordPress themes. Feel free to make improvements to this.
