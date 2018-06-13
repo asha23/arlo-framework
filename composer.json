@@ -48,10 +48,10 @@
 			"package": {
 				"name": "wp-sync-db/wp-sync-db",
 				"type": "wordpress-plugin",
-				"version": "1.5",
+				"version": "1.6",
 				"dist": {
 					"type": "zip",
-					"url": "https://github.com/wp-sync-db/wp-sync-db/archive/1.5.zip"
+					"url": "https://github.com/corysimmons/wp-sync-db/archive/1.6.zip"
 				}
 			}
 		}
@@ -67,6 +67,8 @@
         "wpackagist-plugin/duplicate-post": "*",
         "wpackagist-plugin/simple-image-sizes": "*",
         "wpackagist-plugin/wordpress-seo": "*",
+	"wpackagist-plugin/wordfence": "*",
+        "wpackagist-plugin/wps-hide-login": "*",
 	"advanced-custom-fields/advanced-custom-fields-pro": "*",
 	"wp-sync-db/wp-sync-db": "*",
         "asha23/wp-seed": "*"
